@@ -1,59 +1,99 @@
-# Customer Review Insights Dashboard – Power BI
+# Customer Feedback Analysis Dashboard – Power BI
 
-An interactive and visually rich Power BI dashboard designed to analyze customer feedback, uncover rating trends, and understand review patterns for a service-based platform.
+This repository contains an interactive **Customer Feedback Analysis Dashboard** built using Power BI.  
+The project analyzes customer reviews, rating patterns, and sentiment trends to help understand customer satisfaction levels and service quality improvement areas.
+
+---
 
 ## 📊 Project Overview
-This project analyzes **220+ customer reviews** using Power BI.  
-Data was cleaned in Excel and transformed with calculated fields, then visualized through interactive dashboards to reveal insights about customer sentiment.
+This dashboard was built based on **220+ customer feedback entries**.  
+The data was cleaned, transformed, and visualized to extract insights such as:
+
+- Which rating is given most frequently  
+- How ratings vary month-wise  
+- Whether longer reviews correlate to specific ratings  
+- Overall customer sentiment (Good, Neutral, Bad)
+
+---
 
 ## 🧹 Data Cleaning & Preparation
-Performed in Excel:
-- Removed duplicates and inconsistencies
-- Created **Review_Length** column to measure comment size
-- Derived **Rating_Category** (Bad, Neutral, Good)
-- Extracted **Month** for trend analysis
-- Ensured proper data types for Power BI
+Performed in **Excel** (`CustomerFeedback.xlsx`):
+
+- Removed duplicates and nulls  
+- Created **Review_Length** column  
+- Derived **Rating_Category** (Good, Neutral, Bad)  
+- Extracted **Month**  
+- Standardized data formats (Date, Time, Ratings)  
+
+---
 
 ## 🧮 DAX Measures Used
+The Power BI file (`Customer Feedback Analysis Dashboard.pbix`) includes:
+
 - **Total Bad Reviews**
 - **Total Reviews**
 - **Average Rating**
-- Additional measures for visual accuracy
+- Count of Ratings (for charts)
+- Additional calculated measures for visuals
 
-## 📈 Dashboard Features (Visuals Included)
-- **KPI Cards**:
-  - Average Rating  
-  - Total Reviews  
-  - Total Bad Reviews  
-- **Monthly Trend of Ratings (Line Chart)**
-- **Review Length vs Ratings (Scatter Plot)**
-- **Rating Distribution (Bar Chart)**
-- **Interactive Slicers**:
-  - Rating Category  
-  - Month  
+---
+
+## 📈 Dashboard Features
+The dashboard includes the following visuals:
+
+### ✔ KPI Cards
+- Average Rating  
+- Total Reviews  
+- Total Bad Reviews  
+
+### ✔ Analytical Charts  
+- **Monthly Trend of Ratings** (Line Chart)  
+- **Review Length vs Ratings** (Scatter Plot)  
+- **Rating Distribution** (Bar Chart)
+
+### ✔ Interactive Filters  
+- Rating Category Slicer  
+- Month Slicer  
+
+---
 
 ## 🎨 UI/UX Enhancements
-- Consistent color palette (Blue + White)
-- Rounded, clean KPI borders
-- Balanced spacing and alignment
-- Visual shadow effects for depth
-- Professional font styling for easy readability
+- Clean white card layout  
+- Consistent blue color theme  
+- Shadow effects for KPI cards  
+- Rounded edges for visuals  
+- Balanced spacing & alignment  
+- Clear typography  
 
-## 🧠 Insights Discovered
-- Majority of customer ratings fall under poor service (1-star)
-- Review length does not always correlate with rating
-- Monthly trends show fluctuations in customer satisfaction
-- Bad reviews dominate overall sentiment, highlighting service gaps
+---
+
+## 🧠 Key Insights
+- Majority of ratings are **1-star**, showing service dissatisfaction  
+- Trends vary across months  
+- Review length does not always relate to better or worse ratings  
+- Bad reviews dominate overall sentiment  
+
+---
 
 ## 🛠 Tools & Skills Used
-- **Power BI**
-- **Microsoft Excel**
-- **DAX**
-- **Data Cleaning**
-- **Dashboard Design**
-- **UI/UX in BI**
+- **Power BI Desktop**  
+- **Excel (Data cleaning)**  
+- **DAX (Measures)**  
+- **Data Visualization**  
+- **Dashboard Design (UI/UX)**  
 
-## 📁 Repository Contains
-- The Power BI dashboard file (`.pbix`)
-- Cleaned Excel dataset
-- README documentation (this file)
+---
+
+## 📁 Files in This Repository
+| File Name | Description |
+|----------|-------------|
+| **Customer Feedback Analysis Dashboard.pbix** | Main Power BI dashboard |
+| **CustomerFeedback.xlsx** | Cleaned dataset used in the dashboard |
+| **README.md** | Project documentation |
+| **LICENSE** | MIT License |
+
+---
+
+## 📬 Contact
+Created by **Vikruti Srija**  
+If you like this project, feel free to ⭐ star the repo!
